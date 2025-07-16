@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import axios from 'axios';
 
-const API_URL = "http://192.168.3.40:8800/books"; // ATENÇÃO: pegar o ip atual
+const API_URL = "http://192.168.1.100:8800/books"; // ATENÇÃO: pegar o ip atual
 
 export default function TelaAlterarLivro({ route, navigation }) {
   const { book } = route.params; 

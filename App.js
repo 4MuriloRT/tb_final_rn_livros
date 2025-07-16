@@ -7,6 +7,7 @@ import TelaAdicionarLivro from "./telas/TelaAdicionarLivro";
 import TelaAlterarLivro from "./telas/TelaAlterarLivro";
 import Welcome from "./telas/Welcome";
 import SignIn from "./telas/SignIn";
+import Register from "./telas/Register";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,11 @@ export default function App() {
         <Stack.Screen
           name="SignIn"
           component={SignIn}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Register"
+          component={Register}
           options={{ headerShown: false }}
         />
         <Stack.Screen
