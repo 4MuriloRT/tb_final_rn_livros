@@ -5,13 +5,25 @@ import TelaInicial from "./telas/TelaInicial";
 import TelaLivros from "./telas/TelaLivros";
 import TelaAdicionarLivro from "./telas/TelaAdicionarLivro";
 import TelaAlterarLivro from "./telas/TelaAlterarLivro";
+import Welcome from "./telas/Welcome";
+import SignIn from "./telas/SignIn";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Welcome">
+        <Stack.Screen
+          name="Welcome"
+          component={Welcome}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SignIn"
+          component={SignIn}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Home"
           component={TelaInicial}
