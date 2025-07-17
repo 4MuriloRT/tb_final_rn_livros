@@ -11,7 +11,7 @@ export default function Register() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('http://192.168.1.100:8800/register', {
+      const response = await axios.post('http://192.168.3.40:8800/register', {
         username,
         password,
         role: 'user' // ou "admin" se quiser criar um admin manualmente

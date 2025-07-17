@@ -13,7 +13,7 @@ import {
 import axios from "axios";
 import { useFocusEffect } from "@react-navigation/native";
 
-const API_URL = "http://192.168.1.100:8800/books"; // ATENÇÃO: pegar o ip atual
+const API_URL = "http://192.168.3.40:8800/books"; // ATENÇÃO: pegar o ip atual
 
 export default function TelaLivros({ navigation }) {
   const [books, setBooks] = useState([]);
